@@ -17,14 +17,13 @@
 ## (Comments)
 #Sample Feature Definition Template
 @smokeTest
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Add to cart functionality
+   Following functionality scenarios to test
 
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  @tag1
+  Scenario: Search the product and successfully add to cart
+    Given User on DemoWebShop
+    When User login into the webpage
+    And Search for the product 
+    And Add product into cart
+    Then Validate the outcome
